@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vimeodio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="vimeodio-widget">
+    <button class="vimeodio-prev">Prev</button>
+    <button class="vimeodio-play">Play</button>
+    <button class="vimeodio-next">Next</button>   
+</div>
+
+<a class="vimeodio-toggle-player toggle-button" href="#">Toggle full player</a>
+
+<div class="vimeodio">
+    <div class="vimeodio-player">
+        <div id="vimeodio-frame"></div>
+        <div class="vimeodio-title"></div>
+        <div class="vimeodio-controls">
+            <button class="vimeodio-prev">Prev</button>
+            <button class="vimeodio-play">Play</button>
+            <button class="vimeodio-next">Next</button>
+            
+            <input class="vimeodio-time-range" type="range" min="0" max="62" step="any" value="0">
+            
+            <div>Total : <span class="vimeodio-time-total">0</span></div>
+            <div>Current : <span class="vimeodio-time-current">0</span></div>
+            
+        </div>
+    </div>
+    <div class="vimeodio-playlists">
+        <div class="vimeodio-playlist">
+            <a class="vimeodio-playlist-title" href="#">Playlist 01</a>
+            <ul>
+                <li><label><input data-vimeodio="234462406" type="checkbox" checked /><span>music 01</span></label></li> 
+                <li><label><input data-vimeodio="203848136" type="checkbox" checked /><span>music 02</span></label></li>
+                <li><label><input data-vimeodio="103883315" type="checkbox" checked /><span>music 03</span></label></li>
+            </ul>
+        </div>
+        <div class="vimeodio-playlist">
+            <a class="vimeodio-playlist-title" href="#">Playlist 02</a>
+            <ul>
+                <li><label><input data-vimeodio="127455012" type="checkbox" checked /><span>music 04</span></label></li>
+                    <li><label><input type="checkbox" checked /><span>music 05</span></label></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="vimeodio-overlay"></div>
+<script src='https://player.vimeo.com/api/player.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+
+</body>
+
+</html>
